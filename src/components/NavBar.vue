@@ -1,10 +1,10 @@
 <template>
   <nav
-    class="flex bg-purple-900 h-20 px-8 justify-between items-center text-white"
+    class="flex bg-red-500 h-20 px-8 justify-between items-center text-white"
   >
     <div>
       <router-link class="logo font-bold text-xl tracking-tight" to="/"
-        >TheLogin</router-link
+        >Login</router-link
       >
     </div>
     <div>
@@ -13,25 +13,25 @@
       >
       <router-link
         v-if="!user"
-        class="p-2 mx-1 hover:text-purple-900 hover:bg-gray-300"
+        class="p-2 mx-1 hover:text-red-900 hover:bg-red-300"
         to="/login"
         >Login</router-link
       >
       <button
         v-if="user"
-        class="p-2 mx-1 hover:text-purple-900 hover:bg-gray-300"
+        class="p-2 mx-1 hover:text-red-900 hover:bg-red-300"
         @click="logOut"
       >
         Logout
       </button>
       <router-link
-        class="p-2 mx-1 hover:text-purple-900 hover:bg-gray-300"
+        class="p-2 mx-1 hover:text-red-900 hover:bg-red-300"
         to="/public"
         >Public</router-link
       >
       <router-link
         v-if="user"
-        class="p-2 mx-1 text-white hover:text-purple-900 hover:bg-gray-300"
+        class="p-2 mx-1 text-white hover:text-red-900 hover:bg-red-300"
         to="/private"
         >Private</router-link
       >
